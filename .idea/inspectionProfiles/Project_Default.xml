@@ -1,0 +1,50 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="PyPackageRequirementsInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredPackages">
+        <list>
+          <option value="annotated-doc" />
+          <option value="annotated-types" />
+          <option value="anyio" />
+          <option value="certifi" />
+          <option value="charset-normalizer" />
+          <option value="click" />
+          <option value="colorama" />
+          <option value="contourpy" />
+          <option value="cycler" />
+          <option value="fastapi" />
+          <option value="fonttools" />
+          <option value="h11" />
+          <option value="idna" />
+          <option value="joblib" />
+          <option value="kagglehub" />
+          <option value="kagglesdk" />
+          <option value="kiwisolver" />
+          <option value="matplotlib" />
+          <option value="numpy" />
+          <option value="pandas" />
+          <option value="pandas-stubs" />
+          <option value="pillow" />
+          <option value="protobuf" />
+          <option value="pydantic" />
+          <option value="pydantic_core" />
+          <option value="pyparsing" />
+          <option value="PyYAML" />
+          <option value="requests" />
+          <option value="scikit-learn" />
+          <option value="scipy" />
+          <option value="seaborn" />
+          <option value="starlette" />
+          <option value="threadpoolctl" />
+          <option value="tqdm" />
+          <option value="typing-inspection" />
+          <option value="tzdata" />
+          <option value="urllib3" />
+          <option value="uvicorn" />
+          <option value="torch" />
+        </list>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>
