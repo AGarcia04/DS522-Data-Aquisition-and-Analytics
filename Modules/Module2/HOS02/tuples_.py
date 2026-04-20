@@ -1,0 +1,89 @@
+empty_tup = ()
+print (empty_tup)
+
+empty_tup = (1, 2, 3)
+print(empty_tup)
+
+# Creating tuples
+str_tup = ("alpha", "bravo", "charlie")
+int_tup = (0, 1, 2, 3, 4, 5)
+mix_tup = (20.50, True, "Math", -50, 1+2j)
+
+# Printing the tuples
+print(f"A tuple of strings: {str_tup}")
+print(f"A tuple of integers: {int_tup}")
+print(f"A tuple of mixed data types: {mix_tup}")
+# Accessing elements
+# Accessing elements in tuples with indexing
+print(f"Third item: {str_tup[2]}")                 # access the 3rd element using index 2
+print(f"First and second items: {int_tup[0:2]}")  # elements from 0 to 1
+print(f"Another way of accessing the 1st and 2nd items: {int_tup[:2]}")
+print(f"Last item: {mix_tup[-1]}")                # last element
+print(f"Accessing in reverse: {int_tup[::-1]}")   # reverse tuple# Updating Tuples
+# Directly updating the element value: This will produce an ERROR
+mix_tup[-1] = 'complex data type'
+print("Modified mix tuple: ", mix_tup)
+
+# Updating the tuple using the concatenation operator
+updated_tup = str_tup + int_tup + mix_tup
+print("Updated Tuple:", updated_tup)
+
+# Using list comprehension
+updated_list = [item + 100 for item in int_tup]
+
+# Converting the updated list back to a tuple
+updated_tuple = tuple(updated_list)
+
+# Printing results
+print("Original Tuple:", int_tup)
+print("Updated Tuple:", updated_tuple)
+
+# Updating a tuple using append()
+# Convert tuple to list
+new_list = [6, 7, 8, 9, 10]
+int_list = list(int_tup)
+
+for element in new_list:
+    int_list.append(element)
+
+# Converting list back to tuple
+int_tup2 = tuple(int_list)
+
+# Printing the updated tuple
+print("Original Tuple:", int_tup)
+print("Updated Tuple 2:", int_tup2)
+
+# Unpack elements in tuples
+x, y, z = str_tup
+print(f"x: {x}, y: {y}, z: {z}")
+
+# Unpack Tuple Items Using Asterisk (*)
+x, *y = str_tup 
+print(f"x: {x}, y: {y}")
+print(type(y))
+
+print("For Loop:")
+for num in int_tup2:
+    print(num,end = ' ')
+    
+index = 0
+print("\n\nWhile loop:")
+while index < len(int_tup2):
+    print(int_tup2[index])
+    index += 1
+# Loop Through Tuple Items with Index
+indices = range(len(int_tup2))
+
+for i in indices:
+    print("tup[{}]:".format(i), int_tup2[i])
+
+# Sorting Tuples
+
+def get_first_item(n):
+    return n[0]
+
+def sort_list(tuples):
+    return sorted(tuples, key=get_first_item)
+
+# pass a list to the sort_list function
+print(sort_list([('Uniform', 'Charlie'),('Lima', 'Beta'),('Zulu', 'Alpha'),('Apple', 'Mango'),('Banana', 'Olives'),('Cherry', 'Echo')]))    
